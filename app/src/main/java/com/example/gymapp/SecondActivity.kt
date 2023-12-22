@@ -21,17 +21,17 @@ class SecondActivity : AppCompatActivity() {
 
         override fun onPreExecute() {
             super.onPreExecute()
-            // Any pre-execution setup can go here
+          
         }
 
         override fun doInBackground(vararg params: Void?): Void? {
             try {
                 val document = Jsoup.connect("https://gymplus.ie/membership/").get()
 
-                // This is specific to your code
+                
                 val elements = document.getElementsByClass("wpb_wrapper")
 
-                // This is also specific to your code
+                
                 val theDescription = elements.text()
 
             } catch (e: IOException) {
