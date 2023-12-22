@@ -13,7 +13,7 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        // Create an instance of the AsyncTask and execute it
+        // Instance of the AsyncTask
         DescriptionWebScrape().execute()
     }
 
@@ -42,7 +42,7 @@ class SecondActivity : AppCompatActivity() {
 
         override fun onPostExecute(result: Void?) {
             super.onPostExecute(result)
-            // Anything you want to do after the task is complete
+            
         }
     }
 }
